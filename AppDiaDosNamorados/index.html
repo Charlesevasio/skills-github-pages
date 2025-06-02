@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie Seu Cartão de Afeto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crie Seu Cartão de Afeto</h1>
+
+        <div class="input-section">
+            <label for="remetente">De (Seu Nome):</label>
+            <input type="text" id="remetente" placeholder="Ex: Pedro">
+
+            <label for="destinatario">Para (Nome da Pessoa):</label>
+            <input type="text" id="destinatario" placeholder="Ex: Ana">
+
+            <label for="mensagem">Escolha ou Digite Sua Mensagem:</label>
+            <select id="mensagem-pronta">
+                <option value="">-- Escolha uma mensagem --</option>
+                <option value="Que o nosso amor seja a inspiração para todos os dias! Feliz Dia dos Namorados!">Que o nosso amor seja a inspiração para todos os dias! Feliz Dia dos Namorados!</option>
+                <option value="Com você, cada momento é especial. Feliz Dia dos Namorados!">Com você, cada momento é especial. Feliz Dia dos Namorados!</option>
+                <option value="A amizade é uma forma de amor, e a nossa é incrível! Feliz Dia do Amigo (ou Afeto)!">A amizade é uma forma de amor, e a nossa é incrível! Feliz Dia do Amigo (ou Afeto)!</option>
+                <option value="Você é a pessoa mais importante da minha vida. Te amo!">Você é a pessoa mais importante da minha vida. Te amo!</option>
+            </select>
+            <textarea id="mensagem-personalizada" placeholder="Ou digite sua mensagem personalizada aqui..."></textarea>
+
+            <button id="gerar-cartao">Gerar Cartão</button>
+        </div>
+
+        <div class="card-preview">
+            <h2>Seu Cartão:</h2>
+            <div id="cartao" class="cartao-template">
+                <p class="para-nome"></p>
+                <p class="conteudo-mensagem"></p>
+                <p class="de-nome"></p>
+            </div>
+            <button id="baixar-cartao" style="display: none;">Baixar Cartão como Imagem</button>
+        </div>
+    </div>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

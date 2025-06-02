@@ -1,0 +1,122 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* Tons de rosa e vermelho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #e91e63; /* Rosa mais vibrante */
+    margin-bottom: 25px;
+}
+
+.input-section label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-section input[type="text"],
+.input-section select,
+.input-section textarea {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura */
+}
+
+.input-section textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+    min-height: 100px;
+}
+
+button {
+    background-color: #e91e63;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #c2185b; /* Um tom mais escuro no hover */
+}
+
+.card-preview {
+    margin-top: 40px;
+    border-top: 1px dashed #ccc;
+    padding-top: 30px;
+}
+
+.cartao-template {
+    background-color: #fff0f5; /* Rosa bem claro */
+    border: 2px solid #e91e63;
+    border-radius: 10px;
+    padding: 25px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.cartao-template p {
+    margin: 5px 0;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.cartao-template .para-nome {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #e91e63;
+}
+
+.cartao-template .conteudo-mensagem {
+    font-size: 1.1em;
+    color: #444;
+    flex-grow: 1; /* Faz a mensagem ocupar o espaço disponível */
+}
+
+.cartao-template .de-nome {
+    font-style: italic;
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* Esconder o botão de download inicialmente */
+#baixar-cartao {
+    display: none; /* Controlado pelo JavaScript */
+    margin-top: 20px;
+    background-color: #4CAF50; /* Verde para download */
+}
+
+#baixar-cartao:hover {
+    background-color: #45a049;
+}
